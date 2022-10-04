@@ -1,4 +1,37 @@
 <svg width="789" height="256" viewBox="0 0 789 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+    @-webkit-keyframes floating-left-right {
+        from { -webkit-transform: translate(0,  0px); transform: translate(0,  0px); }
+        33%  { -webkit-transform: translate(200px, 0); transform: translate(200px, 0); }
+        65%  { -webkit-transform: translate(300px, 20px); transform: translate(300px, 20px); }
+        to   { -webkit-transform: translate(0, 0px); transform: translate(0, 0px); }    
+    }
+
+    @-webkit-keyframes floating-right-left {
+        from { -webkit-transform: translate(0,  0px); transform: translate(0,  0px); }
+        33%  { -webkit-transform: translate(-200px, 0); transform: translate(-200px, 0); }
+        65%  { -webkit-transform: translate(-300px, 20px); transform: translate(-300px, 20px); }
+        to   { -webkit-transform: translate(0, 0px); transform: translate(0, 0px); }    
+    }
+
+    #cloud-1, #cloud-2{
+      animation-duration: 15s; 
+      animation-name: floating-left-right; 
+      animation-iteration-count: infinite; 
+      animation-timing-function: ease-in-out;
+    }
+
+    #cloud-3, #cloud-4 {
+      animation-duration: 15s; 
+      animation-name: floating-right-left; 
+      animation-iteration-count: infinite; 
+      animation-timing-function: ease-in-out;
+    }
+
+    #cloud-2, #cloud-4 {
+        animation-delay: 0.5s;
+    }
+  </style> 
 <g id="cta-background">
 <g id="cloud-4">
 <path id="Vector" d="M564.384 28.319C553.838 30.6536 543.215 34.2841 535.3 41.5068C525.454 50.4736 521.078 63.6888 513.693 74.6841C511.833 77.4179 509.673 80.1517 506.675 81.688C502.299 83.9133 497.081 83.208 492.18 82.7542C468.883 80.5672 442.096 81.1139 423.356 94.9196C392.434 117.708 411.322 142.313 396.465 160.684C390.842 167.633 359.816 172.767 365.062 208.088C373.223 263.239 436.856 236.628 444.695 240.428C475.327 255.267 513.732 261.063 546.191 250.817C568.147 243.878 594.135 237.481 616.912 233.867C643.94 229.559 647.96 225.228 675.349 225.578C712.72 226.06 782.621 200.11 787.746 162.406C792.341 128.638 780.756 107.73 758.755 88.096C737.422 69.0689 707.928 75.1269 696.868 69.6594C668.971 55.892 664.108 32.5345 613.007 26.1374C596.793 24.0869 580.348 24.8247 564.384 28.319V28.319Z" fill="url(#paint0_linear_841_5)"/>
