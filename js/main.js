@@ -237,16 +237,16 @@
 
 // header Five
 
-const openMenuBtnFive = document.querySelector('.header-style-five .open-menu-btn button');
-const mobileMenuFive = document.querySelector('.header-style-five .mobile-menu-area');
-const closeBtnFive = document.querySelector('.header-style-five .close-btn button');
-const bodyFive = document.querySelector('body');
+const openMenuBtn = document.querySelector('.header-area .open-menu-btn button');
+const mobileMenu = document.querySelector('.header-area .mobile-menu-area');
+const closeBtn = document.querySelector('.header-area .close-btn button');
+const body = document.querySelector('body');
 
-openMenuBtnFive.addEventListener('click', function () {
-    mobileMenuFive.classList.add('toggle-mobile-menu');
-    bodyFive.classList.add('bg-gray');
+openMenuBtn.addEventListener('click', function () {
+    mobileMenu.classList.add('toggle-mobile-menu');
+    body.classList.add('bg-gray');
 })
-closeBtnFive.addEventListener('click', function () {
-    mobileMenuFive.classList.remove('toggle-mobile-menu');
-    bodyFive.classList.remove('bg-gray');
+closeBtn.addEventListener('click', function () {
+    mobileMenu.classList.remove('toggle-mobile-menu');
+    body.classList.remove('bg-gray');
 })
