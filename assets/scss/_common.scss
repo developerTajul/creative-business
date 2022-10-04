@@ -186,7 +186,9 @@ label {
 
 }
 
-.font-pop { font-family: 'Poppins'; }
+.font-pop { font-family: 'Poppins' !important; }
+.font-ds { font-family: 'DM Sans' !important; }
+.color-white { color: #fff !important; }
 
 @media all and (min-width:576px) and (max-width:767px) {
   h1 {
