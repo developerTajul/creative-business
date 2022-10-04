@@ -3,24 +3,97 @@
 **/
 .cta-area {
 
-	@media screen  and (max-width: 1199px) { 
-        padding-bottom: 100px;
-    }
-
-    @media screen  and (max-width: 991px) { 
-        padding-bottom: 80px 0;
-    }
-
-    @media screen  and (max-width: 767px) { 
-        padding-bottom: 60px 0;
-    }
-
 	.container {
 		max-width: 1194px;
 	}
 
     &__wrapper {
+        gap: 30px;
+        padding-right: 189px;
         background-color: #101B18;
         @include border-radius(35px);
+        background-repeat: no-repeat;
+        background-position: 66% 27%;
+
+        @media screen  and (max-width: 1199px) { 
+            padding-right: 150px;
+        }
+
+        @media screen  and (max-width: 991px) { 
+            padding-right: 60px;
+        }
+
+        @media screen  and (max-width: 991px) { 
+            padding-right: 40px;
+        }
+    }
+
+    &__text {
+        max-width: 400px;
+        
+        @media screen  and (max-width: 991px) { 
+            max-width: 100%;
+        }
+
+        .title {
+            font-size: 38px;
+            line-height: 44px;
+
+            @media screen  and (max-width: 991px) { 
+				font-size: 32px;
+				line-height: 42px;
+			}
+
+			@media screen  and (max-width: 767px) { 
+				font-size: 28px;
+				line-height: 38px;
+			}
+
+			@media screen  and (max-width: 575px) { 
+				font-size: 26px;
+				line-height: 36px;
+			}
+
+			@media screen  and (max-width: 480px) { 
+				font-size: 22px;
+				line-height: 32px;
+			}
+        }
+
+        .sub-title {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .theme-btn {
+            padding: 20px 49px;
+            text-transform: inherit;
+
+            @media screen  and (max-width: 767px) { 
+				padding: 18px 45px;
+			}
+            
+			@media screen  and (max-width: 575px) {  
+                padding: 15px 35px;
+			}
+            
+			@media screen  and (max-width: 480px) {  
+                padding: 12px 25px;
+			}
+
+            &:hover {
+                background: white;
+                border-color: white;
+            }
+        }
+    }
+
+    &__media {
+        max-width: 390px;
+
+        img {
+            height: auto;
+            max-width: 100%;
+        }
     }
 }
