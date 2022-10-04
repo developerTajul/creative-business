@@ -5,7 +5,7 @@
         /*** AOS */
 		AOS.init({
 			once: true,
-			offset: 100,
+			offset: 0,
 			duration: 900,
 		});
     	
