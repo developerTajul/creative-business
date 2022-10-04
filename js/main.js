@@ -109,47 +109,38 @@
             ]
         });
 
-        // testimonial-active
-        $('.testimonial-active').slick({
-            dots: true,
-            arrows: false,
-            infinite: true,
+        // testimonial-active 
+        var testimonials__slider;
+        testimonials__slider = $('.testimonial-area__slider');
+
+        testimonials__slider.slick({
+            dots: true, 
             speed: 300,
-            slidesToShow: 2,
+            arrows: true,
+            autoplay: false,
+            slidesToShow: 3,
+            infinite: true,
             slidesToScroll: 1,
+            autoplaySpeed: 500,
+            dotsClass: "slick-dots list-inline",
+            nextArrow: '<button class="slide-arrow prev-arrow fa-solid fa-arrow-right-long"></button>',
+            prevArrow: '<button class="slide-arrow next-arrow fa-solid fa-arrow-left-long"></button>',
+            appendDots: $(".slider-controls"),
             responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 991,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
+            {
+                breakpoint: 768,
+                settings: {
+                 slidesToShow: 2
                 }
+            },
+            {
+                breakpoint: 530,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
             ]
-        });
+        }); 
 
         // testimonial-active
         $('.testimonial-active-3').slick({

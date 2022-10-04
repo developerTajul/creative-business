@@ -11,6 +11,7 @@
 2. header
 3. slider-area
 */
+@import 'mixin';
 @import 'variable';
 @import 'common';
 @import 'header';
@@ -25,5 +26,6 @@
 @import 'promotion';
 @import 'latest-blog';
 @import 'feature';
+@import 'testimonial-area';
 @import 'widgets';
 @import 'footer';
