@@ -191,46 +191,231 @@ label {
   z-index: 999;
 }
 
-.header-area .main-menu ul li {
-  float: left;
+.header-style-five {
+  background: #222;
 }
-.header-area .main-menu ul li a {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #046CF8;
-  padding-left: 25px;
+.header-style-five ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-.header-area .main-menu ul li a:hover {
-  color: #046CF8;
+.header-style-five .logo-area a {
+  text-decoration: none;
 }
-.header-area .theme-btn {
-  padding-left: 50px;
+.header-style-five .logo-area a img {
+  width: 146px;
+  height: auto;
 }
-.header-area .theme-btn a {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
+.header-style-five .main-menu-area .primary-menu ul {
+  display: flex;
+  align-items: center;
+}
+.header-style-five .main-menu-area .primary-menu ul li {
+  position: relative;
+  /* HAS DROPDOWN MENU */
+}
+.header-style-five .main-menu-area .primary-menu ul li a {
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.664);
   text-transform: capitalize;
-  color: #046CF8;
-  border: 1px solid #046CF8;
-  padding: 12px 41.17px;
-  border-radius: 30px;
+  margin-left: 25px;
+  min-height: 70px;
+  padding: 0px 5px;
 }
-.header-area .theme-btn a i {
+.header-style-five .main-menu-area .primary-menu ul li a:hover {
+  color: #067164;
+}
+.header-style-five .main-menu-area .primary-menu ul li.has-dropdown {
+  position: relative;
+}
+.header-style-five .main-menu-area .primary-menu ul li.has-dropdown::before {
+  position: absolute;
+  top: 23px;
+  right: -12px;
+  content: "+";
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.915);
+  font-weight: bold;
+}
+.header-style-five .main-menu-area .primary-menu ul li.has-dropdown:hover::before {
+  content: "-";
+  font-size: 20px;
+  line-height: 20px;
+}
+.header-style-five .main-menu-area .primary-menu ul li.has-dropdown ul {
+  position: absolute;
+  top: 100%;
+  left: 4px;
+  min-width: 250px;
+  background: #222;
+  display: block;
+  border-top: 5px solid rgba(6, 113, 100, 0.0392156863);
+  border-radius: 4px;
+  padding-bottom: 10px;
+  height: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease-out 0.4s;
+  transform-origin: top;
+  z-index: 2;
+}
+.header-style-five .main-menu-area .primary-menu ul li.has-dropdown ul li {
+  position: relative;
+}
+.header-style-five .main-menu-area .primary-menu ul li.has-dropdown ul li a {
+  min-height: fit-content;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.072);
+  padding: 10px 25px;
+  margin: 0px;
+}
+.header-style-five .main-menu-area .primary-menu ul li.has-dropdown ul li ul {
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  background: black;
+  height: 0px !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+.header-style-five .main-menu-area .primary-menu ul li.has-dropdown ul li:hover ul {
+  height: fit-content !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.header-style-five .main-menu-area .primary-menu ul li.has-dropdown:hover ul {
+  height: fit-content;
+  opacity: 1;
+  visibility: visible;
+}
+.header-style-five .nav-btn-list {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.header-style-five .nav-btn-list li a {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 30px;
+  border-radius: 25px;
+  transition: all ease-in-out 0.3s;
+  border: 1px solid transparent;
+}
+.header-style-five .nav-btn-list li a.theme-btn-bordered {
+  color: #067164;
+  border-color: #067164;
+}
+.header-style-five .nav-btn-list li a.theme-btn-bordered:hover {
+  background: #067164;
+  color: #fff;
+}
+.header-style-five .nav-btn-list li a.theme-btn-fill {
+  background: #067164;
+  color: #fff;
+}
+.header-style-five .nav-btn-list li a.theme-btn-fill:hover {
+  color: #067164;
+  background: transparent;
+  border-color: #067164;
+}
+.header-style-five .mobile-menu-area {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  min-height: 100vh;
+  background: #222;
+  padding-top: 20px;
+  min-width: 340px;
+  transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease-in 0.4s;
+  transform-origin: left;
+}
+.header-style-five .mobile-menu-area .primary-menu ul {
+  display: block;
+}
+.header-style-five .mobile-menu-area .primary-menu ul li a {
+  min-height: fit-content;
+  padding: 8px 0px;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.045);
+  margin-left: 0px;
+  padding: 10px 20px;
+}
+.header-style-five .mobile-menu-area .primary-menu ul li ul {
+  margin-left: 10px;
+}
+.header-style-five .mobile-menu-area .primary-menu ul li.has-dropdown {
+  position: relative;
+}
+.header-style-five .mobile-menu-area .primary-menu ul li.has-dropdown::before {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  content: "+";
+  color: #fff;
+}
+.header-style-five .mobile-menu-area .primary-menu ul li.has-dropdown ul {
+  background: #fff;
+  border-top: none;
+}
+.header-style-five .mobile-menu-area .primary-menu ul li.has-dropdown ul li a {
+  color: #222;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.265);
+  padding: 8px 20px;
+}
+.header-style-five .mobile-menu-area .primary-menu ul li.has-dropdown ul li a:hover {
+  background: #222;
+  color: #fff;
+}
+.header-style-five .mobile-menu-area .mobile-menu-top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.092);
+  padding: 20px 20px 40px;
+}
+.header-style-five .mobile-menu-area .mobile-menu-top .close-btn button {
+  background: #fff;
+  color: #222;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.083);
+}
+.header-style-five .mobile-menu-area .mobile-menu-top .close-btn button:hover {
+  background: #222;
+  color: #fff;
+}
+.header-style-five .toggle-mobile-menu {
+  transform: translateX(0%);
+  opacity: 1;
+  visibility: visible;
+  transition: all ease-in 0.4s;
+}
+.header-style-five .open-menu-btn button {
+  background: transparent;
+  border: none;
+  font-size: 22px;
   color: #fff;
 }
 
-/** mobile menu **/
-.mean-container a.meanmenu-reveal span {
-  display: block;
-  background: red;
-  height: 3px;
-  margin-top: 3px;
+@media all and (max-width: 991px) {
+  .header-style-five {
+    padding: 20px 0px;
+  }
 }
-
 .slider-area.style-1 {
   background-repeat: no-repeat;
   background-image: linear-gradient(278.49deg, #046CF8 34.5%, #26C7FE 100%);

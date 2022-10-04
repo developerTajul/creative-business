@@ -3,12 +3,7 @@
 	jQuery(document).ready(function(){
 
 
-        // meanmenu
-        jQuery('#mobile-menu').meanmenu({
-            meanMenuContainer: '.mobile-menu',
-            meanScreenWidth: "991"
-        });
-
+      
 
     	/** main-slider **/	
     	$('.main-slider-active').slick({
@@ -235,3 +230,23 @@
 	});
 
 }(jQuery));
+
+
+
+// header
+
+// header Five
+
+const openMenuBtnFive = document.querySelector('.header-style-five .open-menu-btn button');
+const mobileMenuFive = document.querySelector('.header-style-five .mobile-menu-area');
+const closeBtnFive = document.querySelector('.header-style-five .close-btn button');
+const bodyFive = document.querySelector('body');
+
+openMenuBtnFive.addEventListener('click', function () {
+    mobileMenuFive.classList.add('toggle-mobile-menu');
+    bodyFive.classList.add('bg-gray');
+})
+closeBtnFive.addEventListener('click', function () {
+    mobileMenuFive.classList.remove('toggle-mobile-menu');
+    bodyFive.classList.remove('bg-gray');
+})
