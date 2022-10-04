@@ -146,6 +146,10 @@
 			&.prev-arrow {
 				right: 0;
 			}
+
+			&:hover, &:focus {
+				background-color: #016146;
+			}
 		}
 	}
 
