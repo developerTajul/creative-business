@@ -1,0 +1,22 @@
+.bannar-area {
+    .bannar-left-area {
+        .bannar-desc {
+            p {
+                color: #595959;
+                line-height: 30px;
+            }
+        }
+
+    }
+}
+
+@media all and (min-width:320px) and (max-width:575px) {
+    .bannar-desc.pr-145 {
+        padding-right: 0px;
+    }
+}
+@media all and (min-width:576px) and (max-width:768px) {
+    .bannar-desc.pr-145 {
+        padding-right: 0px;
+    }
+}
